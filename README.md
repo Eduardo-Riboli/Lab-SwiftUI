@@ -1,8 +1,7 @@
 # New Features Project
 
 Um laboratório vivo: cada animação moderna ou capacidade nova da plataforma Apple
-vira uma demo isolada, navegável e comparável. Referência de inspiração para as
-animações: o canal [Kavsoft](https://www.youtube.com/c/Kavsoft).
+vira uma demo isolada, navegável e comparável.
 
 **Requisitos:** Xcode 27 · iOS 27 · Swift 6.
 
