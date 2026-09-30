@@ -1,10 +1,5 @@
 import SwiftUI
 
-/// A única fonte de verdade do catálogo.
-///
-/// **Para adicionar uma demo nova, acrescente uma linha em `all`.** Nada mais.
-/// A pasta em `Demos/` entra no target sozinha (o projeto usa
-/// `PBXFileSystemSynchronizedRootGroup`), então nunca há `.pbxproj` para editar.
 @MainActor
 enum DemoRegistry {
 
@@ -13,6 +8,7 @@ enum DemoRegistry {
     static let all: [Demo] = [
         .phaseAnimatorHeart,
         .fireShader,
+        .safariCollapsibleBottomBar
     ]
 
     // MARK: - Consultas
@@ -27,8 +23,6 @@ enum DemoRegistry {
 
     static func metadata(id: String) -> DemoMetadata? { byID[id]?.metadata }
 
-    /// Categorias que realmente têm demo, na ordem de `DemoCategory.allCases`.
-    /// O filtro da UI usa isto para não mostrar categoria vazia.
     static let populatedCategories: [DemoCategory] = {
         let present = Set(all.map(\.metadata.category))
         return DemoCategory.allCases.filter(present.contains)
