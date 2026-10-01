@@ -8,7 +8,8 @@ enum DemoRegistry {
     static let all: [Demo] = [
         .phaseAnimatorHeart,
         .fireShader,
-        .safariCollapsibleBottomBar
+        .safariCollapsibleBottomBar,
+        .verticalTabBar
     ]
 
     // MARK: - Consultas
