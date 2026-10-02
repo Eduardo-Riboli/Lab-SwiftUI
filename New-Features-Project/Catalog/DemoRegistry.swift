@@ -9,7 +9,8 @@ enum DemoRegistry {
         .phaseAnimatorHeart,
         .fireShader,
         .safariCollapsibleBottomBar,
-        .verticalTabBar
+        .verticalTabBar,
+        .chatBubbleTransition
     ]
 
     // MARK: - Consultas
