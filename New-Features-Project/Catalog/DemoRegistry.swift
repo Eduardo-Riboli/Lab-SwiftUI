@@ -10,7 +10,8 @@ enum DemoRegistry {
         .fireShader,
         .safariCollapsibleBottomBar,
         .verticalTabBar,
-        .chatBubbleTransition
+        .chatBubbleTransition,
+        .typeWriterEffect
     ]
 
     // MARK: - Consultas
